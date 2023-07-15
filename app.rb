@@ -35,3 +35,7 @@ get("/random/results") do
   @the_result = rand * (@the_max - @the_min) + @the_min
   erb(:random_results)
 end
+
+get ("payment/new") do
+  erb(:payment_new)
+end
